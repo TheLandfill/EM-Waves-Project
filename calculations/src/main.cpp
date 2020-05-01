@@ -27,8 +27,8 @@ int main() {
 	Value_List vl(max_power);
 	real a = 0.0;
 	real b = 1.0;
-	const real chunk_step = (b - a) / (((real)num_threads) * ((real)num_chunks));
-	const real thread_step = (b - a) / 4.0;
+	const real thread_step = (b - a) / ((real)num_threads);
+	const real chunk_step = thread_step / ((real)num_chunks);
 	#pragma omp parallel for
 	for (size_t i = 0; i < num_threads; i++) {
 		const real thread_start = thread_step * i + a;
