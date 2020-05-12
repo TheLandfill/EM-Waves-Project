@@ -230,7 +230,7 @@
 
 	Originally, I was going to consider a large number of virtual point sources
 	as specified in the subsection \textbf{Higher Order Model}, but, as I'll
-	later show, a majority of th elight within the critical angle will
+	later show, a majority of the light within the critical angle will
 	eventually pass through the surface, so the higher order models won't really
 	be necessary for this problem. I actually did a bunch of calculations and
 	wrote some integration software, but my math was wrong, so I dropped those
@@ -277,7 +277,7 @@
 
 	\subsection{Using the Critical Angle}
 
-	Any light outside of the critcal angle will be internally reflected, so we
+	Any light outside of the critical angle will be internally reflected, so we
 	can ignore it, meaning our integration region will be smaller for lower
 	order point sources (and possibly circular). Since $d_n$ increases
 	approximately linearly, we can find an upper bound on $n$ where our
@@ -367,7 +367,7 @@
 	which was the original condition for the critical angle, we can combine the
 	idea of using a hemisphere with a medium with a lower index of refraction to
 	flatten out the hemisphere, which will allow us to arbitrarily increase the
-	crtical angle of the Material-Air Boundary. I actually can't come up with
+	critical angle of the Material-Air Boundary. I actually can't come up with
 	the equation for the shape of this lens, but it would have a reflection
 	coefficient of
 	\begin{align*}
@@ -376,7 +376,7 @@
 		{4 \nled \nmat} {\left( \nled + \nmat \right)^2} \right) \left( \frac
 		{\nmat - \nair} {\nmat + \nair} \right)^2
 	\end{align*}
-	To minimize the reflectio coefficient, I can take the derivative of the
+	To minimize the reflection coefficient, I can take the derivative of the
 	above expression, set it equal to zero, and solve for $\nmat$ in terms of
 	$\nled$ and $\nair$.
 	\[
